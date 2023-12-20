@@ -1,0 +1,181 @@
+/* Global View aka Desktop View */
+
+
+body {
+    font-family: 'Asap', sans-serif;
+    background-color: #ebebeb;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/IMG_0874.jpeg);
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: repeat; */
+}
+
+.container {
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    padding-top: 10px;
+}
+
+.col {
+    /* background-color: rgba(43, 226, 147, 0.181); */
+    width: 90%;
+    margin-bottom: 20px;
+
+
+}
+
+/* .col p {
+    color: white;
+    font-size: 1.7rem;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    padding: 20px 25px;
+    line-height: 1.5rem;
+    text-align: center;
+} */
+
+h1 {
+    text-align: center;
+    font-family: 'Tinos', serif;
+
+    font-size: 4.5rem;
+    text-shadow: 1px 2px 40px black;
+}
+
+
+
+.col img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0px 0px;
+
+}
+
+/* about page */
+/* contact form */
+
+
+/* home page */
+.header-container {
+    min-height: 100px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    margin: 20px;
+}
+
+header {
+    max-width: 1024px;
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbutton {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-bottom: 10px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.098);
+}
+
+.navbutton:hover {
+    background-color: rgba(103, 195, 223, 0.422);
+    transition: 0.5s;
+}
+
+
+
+
+
+.footer-container {
+    background-color: rgb(60, 60, 60);
+    min-height: 100px;
+    margin-bottom: 40px;
+}
+
+
+/* Tablet View */
+@media(max-width: 768px) {
+    .col {
+        width: 45%;
+
+    }
+
+
+
+
+
+    nav .navbutton {
+        display: inline-block;
+        margin-left: 0;
+    }
+
+    .logo {
+        padding: 40px 0;
+        margin-left: 20px;
+    }
+
+    .header-container {
+        position: relative;
+    }
+
+
+    .container {
+        padding-top: 40px;
+    }
+
+    .mob-wrapper {
+        display: block;
+        padding-right: 30px;
+    }
+
+    .mob-nav {
+        display: none;
+        position: absolute;
+        padding-top: 10px;
+    }
+
+    .mobbutton {
+        display: block;
+        background-color: coral;
+        padding: 15px 30px;
+        margin-left: -70px;
+        text-align: center;
+    }
+
+
+}
+
+/* Mobil View usualy 400px*/
+@media(max-width: 500px) {
+
+
+    .col {
+        width: 100%;
+    }
+
+    /* .hide-m {
+        display: none;
+    } */
+
+    .header-container {
+        margin: 0;
+    }
+
+}

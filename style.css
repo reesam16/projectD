@@ -1,0 +1,377 @@
+/* Global Scope */
+
+.workBody {
+    font-family: 'Asap', sans-serif;
+    background: linear-gradient(10deg, #40ad5a, #3bc599, #306a9d);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.workBody2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/IMG_0874.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+
+
+.container {
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 140px;
+}
+
+/* adding the padding-top fixed the issue  */
+main {
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.col {
+    background-color: rgb(43, 226, 147);
+    width: 30%;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    box-shadow: 3px 9px 9px rgba(0, 0, 0, 0.308);
+}
+
+.col2 {
+    background-color: rgb(43, 208, 226);
+    width: 45%;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    box-shadow: 3px 9px 9px rgba(0, 0, 0, 0.308);
+}
+
+.col p {
+
+    color: white;
+    font-size: 0.875rem;
+    padding: 20px 25px;
+    line-height: 1.25rem;
+}
+
+.col2 p {
+    font-family: 'Asap', sans-serif;
+    color: white;
+    font-size: 0.875rem;
+    padding: 20px 25px;
+    line-height: 1.25rem;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Tinos', serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Tinos', serif;
+    font-size: 3rem;
+    text-shadow: 1px 2px 40px rgba(0, 0, 0, 0.499);
+}
+
+
+
+.col img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.col2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0px 0px;
+}
+
+
+.col p::first-line {
+    font-weight: 700;
+}
+
+
+
+.mob-wrapper {
+    display: none;
+}
+
+
+
+/* about page */
+.hero-col1 {
+    max-width: 1024px;
+    background-color: #306a9d94;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.hero-col1 h1 {
+    align-items: center;
+    /* padding-right: 8rem; */
+    display: flex;
+    justify-content: center;
+}
+
+.hero-col1 p {
+    line-height: 1.25rem;
+    margin: 10px 20px;
+    /* padding-left: 8rem; */
+    width: auto;
+    /* width: 500px; */
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.hero-col1 img {
+    border-radius: 10px;
+    grid-row-start: span 2;
+    width: 300px;
+    margin: auto;
+    box-shadow: 0 1px 30px 1px #00000083;
+}
+
+/* img {
+    overflow-clip-margin: content-box;
+    overflow: clip; 
+} */
+
+/* contact form */
+.contactform {
+    border: 1px solid white;
+    border-radius: 10px;
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 80%;
+}
+
+.contactform h1 {
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.308);
+    text-align: center;
+}
+
+.inputwrapper {
+    margin-bottom: 20px;
+}
+
+.newline {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    padding: 12px 20px;
+    width: 100%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    box-sizing: border-box;
+
+}
+
+
+.subbutton {
+    text-decoration: none;
+    background-color: #306a9daa;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-bottom: 50px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.098);
+}
+
+.subbutton:hover {
+    background-color: rgb(43, 226, 147);
+    transition: 0.5s;
+}
+
+/* home page */
+/* use styles.css */
+
+
+.header-container {
+    background-color: rgba(60, 60, 60, 0.756);
+    min-height: 100px;
+    color: white;
+    margin-bottom: 100px;
+    width: 100%;
+    position: fixed;
+}
+
+header {
+    max-width: 1024px;
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* z-index: 1000; */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbutton {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-left: 20px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.098);
+}
+
+.navbutton:hover {
+    background-color: rgb(43, 226, 147);
+    transition: 0.5s;
+}
+
+.header-container.scrolled {
+
+    background-color: #3bc599;
+    transition: background 500ms;
+
+}
+
+
+/* Tablet View */
+@media(max-width: 768px) {
+    .col {
+        width: 45%;
+
+    }
+
+    .hero-container {
+        width: 80%;
+        margin-bottom: 30px;
+        padding: 10px;
+    }
+
+    .contactform {
+        width: 80%;
+        padding: 10px;
+    }
+
+
+    nav {
+        display: none;
+    }
+
+    nav .navbutton {
+        display: block;
+        margin-left: 0;
+    }
+
+    .logo {
+        padding: 20px 0;
+        margin-left: 20px;
+    }
+
+    .header-container {
+        position: relative;
+    }
+
+
+    .container {
+        padding-top: 40px;
+    }
+
+    .hero-col1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 200px;
+    }
+
+    .hero-col1 h1 {
+        padding: 0;
+        text-align: center;
+    }
+
+    .hero-col1 p {
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    main {
+        padding-top: 20px;
+    }
+
+    .mob-wrapper {
+        display: block;
+        padding-right: 30px;
+    }
+
+    .mob-nav {
+        display: none;
+        position: absolute;
+        padding-top: 10px;
+    }
+
+    .mobbutton {
+        display: block;
+        background-color: coral;
+        padding: 15px 30px;
+        margin-left: -70px;
+        text-align: center;
+    }
+
+
+}
+
+/* Mobil View usualy 400px*/
+@media(max-width: 500px) {
+
+
+    .col {
+        width: 95%;
+    }
+
+    .hide-m {
+        display: none;
+    }
+
+    .col2 {
+        width: 95%;
+    }
+
+
+
+}
